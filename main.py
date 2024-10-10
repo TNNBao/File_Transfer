@@ -28,8 +28,8 @@ def send_view():
 
     def send_file():
         s = socket.socket()
-        host = socket.gethostbyname()
         port = 8080
+        host = socket.gethostname()
         s.bind((host, port))
         s.listen(1)
         print(host)
